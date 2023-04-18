@@ -1,6 +1,6 @@
-package projectGroup;
+package projectGroup.enumRestaurant;
 
-public enum Allergens {
+public enum AllergensEnum {
 
     CEREALS_CONTAINING_GLUTEN("Gluten"),
     EGG("Egg"),
@@ -24,11 +24,11 @@ public enum Allergens {
     SPICED("Spiced"),
     NONE("Nessun allergene");
 
-    String name;
+    protected String name;
 
-    Allergens(String name) {
+    AllergensEnum(String name) {
         this.name = name;
     }
 
-    public String getName() {return name;}
+    public String getNameAllergens() {return name;}
 }
